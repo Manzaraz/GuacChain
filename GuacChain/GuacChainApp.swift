@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct GuacChainApp: App {
+     
     var body: some Scene {
         WindowGroup {
             ContentView()

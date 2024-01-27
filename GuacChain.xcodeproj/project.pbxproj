@@ -11,6 +11,8 @@
 		612393702B63593B00E03AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123936F2B63593B00E03AF5 /* ContentView.swift */; };
 		612393722B63593D00E03AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612393712B63593D00E03AF5 /* Assets.xcassets */; };
 		612393752B63593D00E03AF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612393742B63593D00E03AF5 /* Preview Assets.xcassets */; };
+		6123937D2B64672F00E03AF5 /* QtySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123937C2B64672F00E03AF5 /* QtySelectionView.swift */; };
+		6123937F2B648FF100E03AF5 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123937E2B648FF100E03AF5 /* CurrencyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		6123936F2B63593B00E03AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		612393712B63593D00E03AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612393742B63593D00E03AF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6123937B2B635BFA00E03AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6123937C2B64672F00E03AF5 /* QtySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QtySelectionView.swift; sourceTree = "<group>"; };
+		6123937E2B648FF100E03AF5 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		6123936C2B63593B00E03AF5 /* GuacChain */ = {
 			isa = PBXGroup;
 			children = (
+				6123937B2B635BFA00E03AF5 /* Info.plist */,
 				6123936D2B63593B00E03AF5 /* GuacChainApp.swift */,
 				6123936F2B63593B00E03AF5 /* ContentView.swift */,
+				6123937E2B648FF100E03AF5 /* CurrencyViewModel.swift */,
+				6123937C2B64672F00E03AF5 /* QtySelectionView.swift */,
 				612393712B63593D00E03AF5 /* Assets.xcassets */,
 				612393732B63593D00E03AF5 /* Preview Content */,
 			);
@@ -137,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6123937D2B64672F00E03AF5 /* QtySelectionView.swift in Sources */,
+				6123937F2B648FF100E03AF5 /* CurrencyViewModel.swift in Sources */,
 				612393702B63593B00E03AF5 /* ContentView.swift in Sources */,
 				6123936E2B63593B00E03AF5 /* GuacChainApp.swift in Sources */,
 			);
@@ -275,9 +285,9 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuacChain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,6 +297,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iManzi.com.GuacChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,9 +318,9 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuacChain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +330,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iManzi.com.GuacChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
